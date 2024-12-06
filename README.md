@@ -200,12 +200,12 @@ Espera-se que o simulador:
    - **Java Development Kit (JDK)** instalado (versão 8 ou superior).
    - Um ambiente de desenvolvimento Java (como **IntelliJ IDEA** ou **Eclipse**), ou acesso ao terminal para compilar e executar programas Java.
 
-2. **Clonar o Repositório:**
+2. **Clonar o repositório:**
    ```bash
    git clone https://github.com/bmatox/simuladordearquivos.git
    ```
 
-3. **Compilar o Projeto:**
+3. **Compilar o projeto:**
    - Navegue até o diretório do projeto:
      ```bash
      cd simuladordearquivos
@@ -215,18 +215,18 @@ Espera-se que o simulador:
      javac simulador/*.java
      ```
 
-4. **Executar o Simulador:**
+4. **Executar o simulador:**
    - No terminal, execute o programa:
      ```bash
      java simulador.Main
      ```
    - Ou, se estiver usando um IDE, execute a classe `Main` diretamente.
 
-5. **Interagir com o Simulador:**
+5. **Interagir com o simulador:**
    - Após executar o simulador, você verá um menu com várias opções no console.
    - Para realizar qualquer operação, é importante começar com `/raiz` ao especificar caminhos de diretórios. Por exemplo, ao criar um diretório ou arquivo, o caminho deve iniciar com `/raiz`.
 
-6. **Exemplo - Criar um Diretório:**
+6. **Exemplo - Criar um diretório:**
    - No menu, escolha a opção para criar um diretório digitando `1` e pressionando `Enter`.
    - Quando solicitado, insira o caminho do novo diretório, iniciando com `/raiz`:
      ```plaintext
