@@ -194,7 +194,7 @@ Espera-se que o simulador:
   -  Carregue a estrutura do sistema de arquivos a partir do arquivo .dat ao iniciar o simulador.
 ---
 
-## Como Executar o Simulador
+## Como executar o simulador
 
 1. **Pré-requisitos:**
    - **Java Development Kit (JDK)** instalado (versão 8 ou superior).
