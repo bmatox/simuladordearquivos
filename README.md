@@ -4,8 +4,8 @@
 
 - [Introdução](#introdução)
 - [Metodologia](#metodologia)
-- [Parte 1: Introdução ao Sistema de Arquivos com Journaling](#parte-1-introdução-ao-sistema-de-arquivos-com-journaling)
-  - [Descrição do Sistema de Arquivos](#descrição-do-sistema-de-arquivos)
+- [Parte 1: Introdução ao sistema de arquivos com Journaling](#parte-1-introdução-ao-sistema-de-arquivos-com-journaling)
+  - [Descrição do sistema de arquivos](#descrição-do-sistema-de-arquivos)
   - [Journaling](#journaling)
 - [Parte 2: Arquitetura do Simulador](#parte-2-arquitetura-do-simulador)
   - [Estrutura de Dados](#estrutura-de-dados)
@@ -19,7 +19,7 @@
 - [Evidências](#evidências)
   - [Conteúdo do Journal](#conteúdo-do-journal)
   - [Print do arquivo sistemaDeArquivos.dat](#conteúdo-do-arquivo-dat)
-  - [Console (Entradas e Saídas)](#console-entradas-e-saídas)
+  - [Print do console (Entradas e Saídas)](#console-entradas-e-saídas)
 
 ---
 
@@ -37,18 +37,18 @@ O programa executa cada funcionalidade e exibe o resultado na tela quando necess
 
 ---
 
-## Parte 1: Introdução ao Sistema de Arquivos com Journaling
+## Parte 1: Introdução ao sistema de arquivos com Journaling
 
 ### Descrição do Sistema de Arquivos
 
 Um **sistema de arquivos** é uma estrutura que um sistema operacional utiliza para controlar como os dados são armazenados e recuperados de um meio de armazenamento, como um disco rígido ou SSD. Ele organiza os dados em estruturas hierárquicas de arquivos e diretórios, facilitando o gerenciamento, o acesso e a manipulação das informações.
 
-**Importância do Sistema de Arquivos:**
+**Importância do sistema de arquivos:**
 
-- **Organização de Dados:** Permite estruturar e organizar dados de forma eficiente.
-- **Gerenciamento de Armazenamento:** Otimiza o uso do espaço disponível em dispositivos de armazenamento.
-- **Segurança e Permissões:** Controla o acesso aos dados, garantindo privacidade e segurança.
-- **Integridade dos Dados:** Previne a corrupção dos dados e assegura a recuperação em caso de falhas.
+- **Organização de dados:** Permite estruturar e organizar dados de forma eficiente.
+- **Gerenciamento de armazenamento:** Otimiza o uso do espaço disponível em dispositivos de armazenamento.
+- **Segurança e permissões:** Controla o acesso aos dados, garantindo privacidade e segurança.
+- **Integridade dos dados:** Previne a corrupção dos dados e assegura a recuperação em caso de falhas.
 
 ### Journaling
 
@@ -56,7 +56,7 @@ Um **sistema de arquivos** é uma estrutura que um sistema operacional utiliza p
 
 **Propósito e Funcionamento:**
 
-- **Recuperação após Falhas:** Em caso de interrupções inesperadas (como quedas de energia), o journal permite que o sistema identifique operações incompletas e recupere a consistência dos dados.
+- **Recuperação após falhas:** Em caso de interrupções inesperadas (como quedas de energia), o journal permite que o sistema identifique operações incompletas e recupere a consistência dos dados.
 - **Tipos de Journaling:**
   - **Write-Ahead Logging (WAL):** Registra todas as operações pendentes antes de executá-las.
   - **Log-Structured File Systems:** Organiza todo o sistema de arquivos como um log contínuo.
@@ -177,7 +177,7 @@ Espera-se que o simulador:
 
 ![Print do arquivo sistemaDeArquivos.dat](https://github.com/user-attachments/assets/556992d5-e906-4a65-aeb8-106081fa7c29)
 
-### Console (Entradas e Saídas)
+### Print do console (Entradas e Saídas)
 
 ![Console (Entradas e Saídas)](https://github.com/user-attachments/assets/ca069e39-4bad-4ccc-8237-09384162f2c3)
 ![Captura de tela 2024-12-06 012241](https://github.com/user-attachments/assets/654e0279-1e69-4171-9e8e-701dd5a0b3c6)
