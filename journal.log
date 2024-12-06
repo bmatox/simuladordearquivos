@@ -1,0 +1,20 @@
+2024-12-06T00:32:52.5379334|criarDiretorio|/raiz/diretorio1|iniciada
+2024-12-06T00:32:52.5379334|criarDiretorio|/raiz/diretorio1|concluída
+2024-12-06T00:32:52.5449334|criarDiretorio|/raiz/diretorio2|iniciada
+2024-12-06T00:32:52.5449334|criarDiretorio|/raiz/diretorio2|concluída
+2024-12-06T00:32:52.55305|criarArquivo|/raiz/diretorio1/arquivo1.txt|iniciada
+2024-12-06T00:32:52.55305|criarArquivo|/raiz/diretorio1/arquivo1.txt|concluída
+2024-12-06T00:32:52.5579916|criarArquivo|/raiz/diretorio2/arquivo2.txt|iniciada
+2024-12-06T00:32:52.5579916|criarArquivo|/raiz/diretorio2/arquivo2.txt|concluída
+2024-12-06T00:32:52.5619401|copiarArquivo|De /raiz/diretorio1/arquivo1.txt para /raiz/diretorio2|iniciada
+2024-12-06T00:32:52.5619401|copiarArquivo|De /raiz/diretorio1/arquivo1.txt para /raiz/diretorio2|concluída
+2024-12-06T00:32:52.5640568|apagarArquivo|/raiz/diretorio2/arquivo2.txt|iniciada
+2024-12-06T00:32:52.5640568|apagarArquivo|/raiz/diretorio2/arquivo2.txt|concluída
+2024-12-06T00:32:52.5670541|renomearDiretorio|/raiz/diretorio1 para diretorio1_renomeado|iniciada
+2024-12-06T00:32:52.5670541|renomearDiretorio|/raiz/diretorio1 para diretorio1_renomeado|concluída
+2024-12-06T00:32:52.5690918|renomearArquivo|/raiz/diretorio2/arquivo1.txt para arquivo1_copiado.txt|iniciada
+2024-12-06T00:32:52.5690918|renomearArquivo|/raiz/diretorio2/arquivo1.txt para arquivo1_copiado.txt|concluída
+2024-12-06T00:32:52.5700587|apagarDiretorio|/raiz/diretorio2|iniciada
+2024-12-06T00:32:52.5700587|apagarDiretorio|/raiz/diretorio2|concluída
+2024-12-06T00:32:52.572243|renomearDiretorio|/raiz/diretorio1_renomeado para diretorio1_final|iniciada
+2024-12-06T00:32:52.572243|renomearDiretorio|/raiz/diretorio1_renomeado para diretorio1_final|concluída
