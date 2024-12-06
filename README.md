@@ -171,12 +171,19 @@ Espera-se que o simulador:
 
 ### Conteúdo do Journal
 
-![Captura de tela 2024-12-06 003526](https://github.com/user-attachments/assets/e773ddbf-bbe9-4351-882f-8deff769f66d)
+![Conteúdo do Journal](https://github.com/user-attachments/assets/e773ddbf-bbe9-4351-882f-8deff769f66d)
 
 ### Print do arquivo sistemaDeArquivos.dat
 
-![Captura de tela 2024-12-06 003552](https://github.com/user-attachments/assets/556992d5-e906-4a65-aeb8-106081fa7c29)
+![Print do arquivo sistemaDeArquivos.dat](https://github.com/user-attachments/assets/556992d5-e906-4a65-aeb8-106081fa7c29)
 
 ### Console (Entradas e Saídas)
 
-![Console (Entradas e Saídas)](caminho/para/o/arquivo/console.png)
+![Console (Entradas e Saídas)](https://github.com/user-attachments/assets/ca069e39-4bad-4ccc-8237-09384162f2c3)
+![Captura de tela 2024-12-06 012241](https://github.com/user-attachments/assets/654e0279-1e69-4171-9e8e-701dd5a0b3c6)
+![Captura de tela 2024-12-06 012328](https://github.com/user-attachments/assets/75bbdf61-0679-4862-8bbe-43144e4bf81d)
+![Captura de tela 2024-12-06 012504](https://github.com/user-attachments/assets/d59feffc-5bbe-4fee-9c2d-d10a54c3e63e)
+
+
+
+
