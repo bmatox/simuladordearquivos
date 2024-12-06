@@ -5,8 +5,8 @@ import java.time.LocalDateTime;
 
 public class FileSystem {
     private Diretorio diretorioRaiz;
-    private final String caminhoContêiner = "sistemaDeArquivos.dat";
-    private RandomAccessFile arquivoContêiner;
+    private final String caminhoConteiner = "sistemaDeArquivos.dat";
+    private RandomAccessFile arquivoConteiner;
     private GerenciadorDeEspaco gerenciadorDeEspaco;
 
     public FileSystem() {
@@ -16,16 +16,16 @@ public class FileSystem {
 
     private void carregarSistemaDeArquivos() {
         try {
-            File arquivo = new File(caminhoContêiner);
+            File arquivo = new File(caminhoConteiner);
             if (arquivo.exists() && arquivo.length() > 8) {
-                arquivoContêiner = new RandomAccessFile(arquivo, "rw");
+                arquivoConteiner = new RandomAccessFile(arquivo, "rw");
 
                 // Lê o tamanho do sistema de arquivos serializado
-                arquivoContêiner.seek(0);
-                long tamanhoSistema = arquivoContêiner.readLong();
+                arquivoConteiner.seek(0);
+                long tamanhoSistema = arquivoConteiner.readLong();
 
                 // Calcula a posição onde o sistema de arquivos começa
-                long posicaoSistema = arquivoContêiner.length() - tamanhoSistema;
+                long posicaoSistema = arquivoConteiner.length() - tamanhoSistema;
 
                 // Se a posição for menor que 8, ajustamos para 8
                 if (posicaoSistema < 8) {
@@ -33,9 +33,9 @@ public class FileSystem {
                 }
 
                 // Lê os bytes do sistema de arquivos serializado
-                arquivoContêiner.seek(posicaoSistema);
+                arquivoConteiner.seek(posicaoSistema);
                 byte[] sistemaDeArquivosBytes = new byte[(int) tamanhoSistema];
-                arquivoContêiner.readFully(sistemaDeArquivosBytes);
+                arquivoConteiner.readFully(sistemaDeArquivosBytes);
 
                 // Deserializa o sistema de arquivos
                 ByteArrayInputStream bis = new ByteArrayInputStream(sistemaDeArquivosBytes);
@@ -44,7 +44,7 @@ public class FileSystem {
                 ois.close();
 
             } else {
-                arquivoContêiner = new RandomAccessFile(arquivo, "rw");
+                arquivoConteiner = new RandomAccessFile(arquivo, "rw");
                 diretorioRaiz = new Diretorio("raiz");
                 salvarSistemaDeArquivos();
             }
@@ -67,11 +67,11 @@ public class FileSystem {
             long tamanhoSistema = sistemaDeArquivosBytes.length;
 
             // Escreve o tamanho do sistema de arquivos no início do arquivo
-            arquivoContêiner.seek(0);
-            arquivoContêiner.writeLong(tamanhoSistema);
+            arquivoConteiner.seek(0);
+            arquivoConteiner.writeLong(tamanhoSistema);
 
             // Calcula a posição onde o sistema de arquivos começa
-            long posicaoSistema = arquivoContêiner.length() - tamanhoSistema;
+            long posicaoSistema = arquivoConteiner.length() - tamanhoSistema;
 
             // Se o arquivo está vazio ou posicaoSistema for menor que 8 (após o long inicial), ajustamos a posição
             if (posicaoSistema < 8) {
@@ -79,8 +79,8 @@ public class FileSystem {
             }
 
             // Escreve o sistema de arquivos na posição calculada
-            arquivoContêiner.seek(posicaoSistema);
-            arquivoContêiner.write(sistemaDeArquivosBytes);
+            arquivoConteiner.seek(posicaoSistema);
+            arquivoConteiner.write(sistemaDeArquivosBytes);
 
             // Não truncar o arquivo - remove chamada ao setLength
             // Isso evita perder os dados dos arquivos
@@ -96,7 +96,7 @@ public class FileSystem {
         long tamanhoSistema = obterTamanhoSistemaDeArquivos();
 
         // Calcula a posição onde o sistema de arquivos começa
-        long posicaoSistema = arquivoContêiner.length() - tamanhoSistema;
+        long posicaoSistema = arquivoConteiner.length() - tamanhoSistema;
 
         // Se a posição for menor que 8, ajustamos para 8
         if (posicaoSistema < 8) {
@@ -112,8 +112,8 @@ public class FileSystem {
         }
 
         // Escreve o conteúdo do arquivo
-        arquivoContêiner.seek(posicao);
-        arquivoContêiner.write(conteudo);
+        arquivoConteiner.seek(posicao);
+        arquivoConteiner.write(conteudo);
 
         // Atualiza as informações do arquivo
         arquivo.setPosicaoInicio(posicao);
@@ -130,9 +130,9 @@ public class FileSystem {
             return new byte[0];
         }
 
-        arquivoContêiner.seek(arquivo.getPosicaoInicio());
+        arquivoConteiner.seek(arquivo.getPosicaoInicio());
         byte[] conteudo = new byte[(int) arquivo.getTamanho()];
-        arquivoContêiner.readFully(conteudo);
+        arquivoConteiner.readFully(conteudo);
         return conteudo;
     }
 
@@ -149,8 +149,8 @@ public class FileSystem {
     // Método auxiliar para obter o tamanho do sistema de arquivos
     private long obterTamanhoSistemaDeArquivos() {
         try {
-            arquivoContêiner.seek(0);
-            return arquivoContêiner.readLong();
+            arquivoConteiner.seek(0);
+            return arquivoConteiner.readLong();
         } catch (IOException e) {
             e.printStackTrace();
             return 0;
@@ -162,6 +162,6 @@ public class FileSystem {
     }
 
     public void fecharArquivoContêiner() throws IOException {
-        arquivoContêiner.close();
+        arquivoConteiner.close();
     }
 }
