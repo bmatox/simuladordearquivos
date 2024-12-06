@@ -189,6 +189,9 @@ Espera-se que o simulador:
   - Permita realizar operações comuns de sistemas de arquivos de forma similar a um sistema real.
 - **Garanta a integridade dos dados:**
   - Utilize o journaling para manter a consistência e integridade dos dados, mesmo em casos de falhas ou interrupções inesperadas.
+- **Persistência dos dados:**
+  -  Utilize um arquivo .dat para armazenar a estrutura do sistema de arquivos e os conteúdos dos arquivos, garantindo que o estado do sistema de arquivos seja preservado entre as execuções do programa.
+  -  Carregue a estrutura do sistema de arquivos a partir do arquivo .dat ao iniciar o simulador.
 ---
 
 ## Como Executar o Simulador
