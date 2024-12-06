@@ -16,6 +16,10 @@
   - [Classe `Journal`](#classe-journal)
 - [Resultados Esperados](#resultados-esperados)
 - [Como Executar o Simulador](#como-executar-o-simulador)
+- [Evidências](#evidências)
+  - [Conteúdo do Journal](#conteúdo-do-journal)
+  - [Print do arquivo sistemaDeArquivos.dat](#conteúdo-do-arquivo-dat)
+  - [Console (Entradas e Saídas)](#console-entradas-e-saídas)
 
 ---
 
@@ -162,3 +166,17 @@ Espera-se que o simulador:
 2. **Clonar o Repositório:**
    ```bash
    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/bmatox/simuladordearquivos.git)
+
+## Evidências
+
+### Conteúdo do Journal
+
+![Captura de tela 2024-12-06 003526](https://github.com/user-attachments/assets/e773ddbf-bbe9-4351-882f-8deff769f66d)
+
+### Print do arquivo sistemaDeArquivos.dat
+
+![Captura de tela 2024-12-06 003552](https://github.com/user-attachments/assets/556992d5-e906-4a65-aeb8-106081fa7c29)
+
+### Console (Entradas e Saídas)
+
+![Console (Entradas e Saídas)](caminho/para/o/arquivo/console.png)
