@@ -117,9 +117,7 @@ Cada arquivo no sistema de arquivos tem atributos que indicam a posição inicia
 
 Quando um arquivo é criado ou modificado, seu conteúdo é escrito em uma posição específica dentro do arquivo `.dat`. O simulador garante que a posição correta seja calculada e que não haja sobreposição de dados. Após a escrita, a estrutura do sistema de arquivos é atualizada e salva novamente.
 
-##### 4. Processo de Leitura
-
-Para ler o conteúdo de um arquivo, o simulador usa as informações de posição e tamanho armazenadas nos objetos `Arquivo`. Ele busca a posição correta no arquivo `.dat` e lê a quantidade de bytes correspondente ao tamanho do arquivo, recriando o conteúdo original.
+##### 4. Processo de Leitura (Não implementado aqui)
 
 #### Importância do Arquivo `.dat`
 
