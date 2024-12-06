@@ -1,4 +1,4 @@
-# Simulador de Sistema de Arquivos com Journaling
+# Simulador de sistema de arquivos com Journaling
 
 ## Sumário
 
@@ -40,7 +40,7 @@ O programa executa cada funcionalidade e exibe o resultado na tela quando necess
 
 ## Parte 1: Introdução ao sistema de arquivos com Journaling
 
-### Descrição do Sistema de Arquivos
+### Descrição do sistema de arquivos
 
 Um **sistema de arquivos** é uma estrutura que um sistema operacional utiliza para controlar como os dados são armazenados e recuperados de um meio de armazenamento, como um disco rígido ou SSD. Ele organiza os dados em estruturas hierárquicas de arquivos e diretórios, facilitando o gerenciamento, o acesso e a manipulação das informações.
 
@@ -55,7 +55,7 @@ Um **sistema de arquivos** é uma estrutura que um sistema operacional utiliza p
 
 **Journaling** é uma técnica utilizada em sistemas de arquivos para manter a integridade dos dados, registrando todas as operações antes de aplicá-las efetivamente. Isso é realizado através de um log chamado **journal**.
 
-**Propósito e Funcionamento:**
+**Propósito e funcionamento:**
 
 - **Recuperação após falhas:** Em caso de interrupções inesperadas (como quedas de energia), o journal permite que o sistema identifique operações incompletas e recupere a consistência dos dados.
 - **Tipos de Journaling:**
@@ -66,7 +66,7 @@ Um **sistema de arquivos** é uma estrutura que um sistema operacional utiliza p
 
 ---
 
-## Parte 2: Arquitetura do Simulador
+## Parte 2: Arquitetura do simulador
 
 ### Estrutura de Dados
 
@@ -233,6 +233,22 @@ Espera-se que o simulador:
      Caminho do novo diretório: /raiz/meuNovoDiretório
      ```
    - O simulador confirmará a criação do diretório se tudo estiver correto.
+    
+7. **Exemplo - Listar conteúdo de um diretório:** 
+   - No menu, escolha a opção para listar o conteúdo de um diretório digitando `9` e pressionando `Enter`.
+   - Insira o caminho do diretório que deseja listar, começando com `/raiz`:
+     ```plaintext
+     Caminho do diretório: /raiz/meuNovoDiretório
+     ```
+   - O simulador exibirá os arquivos e subdiretórios presentes no caminho especificado.
+
+8. **Exemplo - Apagar um arquivo:**
+   - Para apagar um arquivo, escolha a opção digitando `5` no menu e pressionando `Enter`.
+   - Informe o caminho completo do arquivo que deseja remover:
+     ```plaintext
+     Caminho do arquivo: /raiz/meuNovoDiretório/meuArquivo.txt
+     ```
+   - O simulador confirmará a exclusão, caso o arquivo exista.
 
 ---
 
