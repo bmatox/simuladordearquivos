@@ -162,7 +162,7 @@ Espera-se que o simulador:
 
 2. **Clonar o Repositório:**
    ```bash
-   git clone [https://github.com/bmatox/simuladordearquivos.git]
+   git clone https://github.com/bmatox/simuladordearquivos.git
 
 ## Evidências
 
