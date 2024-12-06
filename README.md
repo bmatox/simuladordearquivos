@@ -148,13 +148,10 @@ Gerencia o log das operações realizadas:
 
 Espera-se que o simulador:
 
-- **Reproduza as Operações Básicas:**
+- **Reproduza as operações básicas:**
   - Permita realizar operações comuns de sistemas de arquivos de forma similar a um sistema real.
-- **Garanta a Integridade dos Dados:**
+- **Garanta a integridade dos dados:**
   - Utilize o journaling para manter a consistência e integridade dos dados, mesmo em casos de falhas ou interrupções inesperadas.
-- **Forneça Aprendizado Prático:**
-  - Auxilie na compreensão dos conceitos de sistemas de arquivos e a importância do journaling, oferecendo uma ferramenta prática para experimentação.
-
 ---
 
 ## Como Executar o Simulador
