@@ -19,7 +19,7 @@
 - [Evidências](#evidências)
   - [Conteúdo do Journal](#conteúdo-do-journal)
   - [Print do arquivo sistemaDeArquivos.dat](#conteúdo-do-arquivo-dat)
-  - [Print do console (Entradas e Saídas)](#console-entradas-e-saídas)
+  - [Prints do console (Entradas e Saídas)](#console-entradas-e-saídas)
 
 ---
 
@@ -174,12 +174,12 @@ Espera-se que o simulador:
 
 ![Print do arquivo sistemaDeArquivos.dat](https://github.com/user-attachments/assets/556992d5-e906-4a65-aeb8-106081fa7c29)
 
-### Print do console (Entradas e Saídas)
+### Prints do console (Entradas e Saídas)
 
-![Print do console (Entradas e Saídas)](https://github.com/user-attachments/assets/ca069e39-4bad-4ccc-8237-09384162f2c3)
-![Print do console (Entradas e Saídas)](https://github.com/user-attachments/assets/654e0279-1e69-4171-9e8e-701dd5a0b3c6)
-![Print do console (Entradas e Saídas)](https://github.com/user-attachments/assets/75bbdf61-0679-4862-8bbe-43144e4bf81d)
-![Print do console (Entradas e Saídas)](https://github.com/user-attachments/assets/d59feffc-5bbe-4fee-9c2d-d10a54c3e63e)
+![Prints do console (Entradas e Saídas)](https://github.com/user-attachments/assets/ca069e39-4bad-4ccc-8237-09384162f2c3)
+![Prints do console (Entradas e Saídas)](https://github.com/user-attachments/assets/654e0279-1e69-4171-9e8e-701dd5a0b3c6)
+![Prints do console (Entradas e Saídas)](https://github.com/user-attachments/assets/75bbdf61-0679-4862-8bbe-43144e4bf81d)
+![Prints do console (Entradas e Saídas)](https://github.com/user-attachments/assets/d59feffc-5bbe-4fee-9c2d-d10a54c3e63e)
 
 
 
