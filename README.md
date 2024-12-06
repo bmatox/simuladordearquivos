@@ -7,15 +7,15 @@
 - [Parte 1: Introdução ao sistema de arquivos com Journaling](#parte-1-introdução-ao-sistema-de-arquivos-com-journaling)
   - [Descrição do sistema de arquivos](#descrição-do-sistema-de-arquivos)
   - [Journaling](#journaling)
-- [Parte 2: Arquitetura do Simulador](#parte-2-arquitetura-do-simulador)
-  - [Estrutura de Dados](#estrutura-de-dados)
+- [Parte 2: Arquitetura do simulador](#parte-2-arquitetura-do-simulador)
+  - [Estrutura de dados](#estrutura-de-dados)
   - [Implementação do Journaling](#implementação-do-journaling)
 - [Parte 3: Implementação em Java](#parte-3-implementação-em-java)
   - [Classe `FileSystemSimulator`](#classe-filesystemsimulator)
   - [Classes `Arquivo` e `Diretorio`](#classes-arquivo-e-diretorio)
   - [Classe `Journal`](#classe-journal)
-- [Resultados Esperados](#resultados-esperados)
-- [Como Executar o Simulador](#como-executar-o-simulador)
+- [Resultados esperados](#resultados-esperados)
+- [Como executar o simulador](#como-executar-o-simulador)
 - [Evidências](#evidências)
   - [Conteúdo do Journal](#conteúdo-do-journal)
   - [Print do arquivo sistemaDeArquivos.dat](#conteúdo-do-arquivo-dat)
@@ -176,10 +176,10 @@ Espera-se que o simulador:
 
 ### Print do console (Entradas e Saídas)
 
-![Console (Entradas e Saídas)](https://github.com/user-attachments/assets/ca069e39-4bad-4ccc-8237-09384162f2c3)
-![Captura de tela 2024-12-06 012241](https://github.com/user-attachments/assets/654e0279-1e69-4171-9e8e-701dd5a0b3c6)
-![Captura de tela 2024-12-06 012328](https://github.com/user-attachments/assets/75bbdf61-0679-4862-8bbe-43144e4bf81d)
-![Captura de tela 2024-12-06 012504](https://github.com/user-attachments/assets/d59feffc-5bbe-4fee-9c2d-d10a54c3e63e)
+![Print do console (Entradas e Saídas)](https://github.com/user-attachments/assets/ca069e39-4bad-4ccc-8237-09384162f2c3)
+![Print do console (Entradas e Saídas)](https://github.com/user-attachments/assets/654e0279-1e69-4171-9e8e-701dd5a0b3c6)
+![Print do console (Entradas e Saídas)](https://github.com/user-attachments/assets/75bbdf61-0679-4862-8bbe-43144e4bf81d)
+![Print do console (Entradas e Saídas)](https://github.com/user-attachments/assets/d59feffc-5bbe-4fee-9c2d-d10a54c3e63e)
 
 
 
