@@ -181,7 +181,7 @@ Gerencia o log das operações realizadas:
 
 ---
 
-## Resultados Esperados
+## Resultados esperados
 
 Espera-se que o simulador:
 
@@ -203,6 +203,38 @@ Espera-se que o simulador:
 2. **Clonar o Repositório:**
    ```bash
    git clone https://github.com/bmatox/simuladordearquivos.git
+   ```
+
+3. **Compilar o Projeto:**
+   - Navegue até o diretório do projeto:
+     ```bash
+     cd simuladordearquivos
+     ```
+   - Compile as classes Java:
+     ```bash
+     javac simulador/*.java
+     ```
+
+4. **Executar o Simulador:**
+   - No terminal, execute o programa:
+     ```bash
+     java simulador.Main
+     ```
+   - Ou, se estiver usando um IDE, execute a classe `Main` diretamente.
+
+5. **Interagir com o Simulador:**
+   - Após executar o simulador, você verá um menu com várias opções no console.
+   - Para realizar qualquer operação, é importante começar com `/raiz` ao especificar caminhos de diretórios. Por exemplo, ao criar um diretório ou arquivo, o caminho deve iniciar com `/raiz`.
+
+6. **Exemplo - Criar um Diretório:**
+   - No menu, escolha a opção para criar um diretório digitando `1` e pressionando `Enter`.
+   - Quando solicitado, insira o caminho do novo diretório, iniciando com `/raiz`:
+     ```plaintext
+     Caminho do novo diretório: /raiz/meuNovoDiretório
+     ```
+   - O simulador confirmará a criação do diretório se tudo estiver correto.
+
+---
 
 ## Evidências
 
