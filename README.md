@@ -10,6 +10,7 @@
 - [Parte 2: Arquitetura do simulador](#parte-2-arquitetura-do-simulador)
   - [Estrutura de dados](#estrutura-de-dados)
   - [Implementação do Journaling](#implementação-do-journaling)
+  - [Arquivo .dat](#arquivo-dat)
 - [Parte 3: Implementação em Java](#parte-3-implementação-em-java)
   - [Classe `FileSystemSimulator`](#classe-filesystemsimulator)
   - [Classes `Arquivo` e `Diretorio`](#classes-arquivo-e-diretorio)
@@ -88,6 +89,44 @@ O journaling é implementado através da classe `Journal`, que gerencia o log da
   - Após a conclusão, o status é atualizado para "concluída".
   - Em caso de falhas, o journal é utilizado para recuperar operações pendentes.
 
+### Arquivo `.dat`
+
+O arquivo `.dat` no contexto deste simulador de sistema de arquivos em Java é um **contêiner binário** que armazena a estrutura do sistema de arquivos, incluindo todos os diretórios e arquivos criados pelo usuário. Este arquivo é essencial para a persistência dos dados, permitindo que o sistema de arquivos mantenha seu estado entre as execuções do programa.
+
+#### Conteúdo do Arquivo `.dat`
+
+O arquivo `.dat` contém dois principais tipos de dados:
+
+1. **Estrutura do Sistema de Arquivos:**
+   - A estrutura hierárquica de diretórios e arquivos é serializada e armazenada no arquivo. Isso inclui todas as informações sobre diretórios (como nome, lista de arquivos e subdiretórios) e arquivos (como nome, posição e tamanho no arquivo contêiner, data de criação e modificação).
+   
+2. **Conteúdos dos Arquivos:**
+   - Os dados reais dos arquivos (o conteúdo) são armazenados em posições específicas dentro do arquivo `.dat`. Cada arquivo sabe a posição inicial e o tamanho de seu conteúdo dentro do arquivo contêiner, permitindo a leitura e escrita eficientes.
+
+#### Funcionamento
+
+##### 1. Serialização da Estrutura do Sistema de Arquivos
+
+A estrutura do sistema de arquivos é representada por objetos Java (`Diretorio` e `Arquivo`) que são serializados e armazenados no arquivo `.dat`. A serialização converte esses objetos em uma sequência de bytes que podem ser salvos e posteriormente desserializados para recriar os objetos originais.
+
+##### 2. Posições dos Conteúdos dos Arquivos
+
+Cada arquivo no sistema de arquivos tem atributos que indicam a posição inicial e o tamanho de seu conteúdo dentro do arquivo `.dat`. Isso permite que o simulador leia e escreva diretamente no arquivo contêiner sem necessidade de carregar todo o conteúdo em memória.
+
+##### 3. Processo de Escrita
+
+Quando um arquivo é criado ou modificado, seu conteúdo é escrito em uma posição específica dentro do arquivo `.dat`. O simulador garante que a posição correta seja calculada e que não haja sobreposição de dados. Após a escrita, a estrutura do sistema de arquivos é atualizada e salva novamente.
+
+##### 4. Processo de Leitura
+
+Para ler o conteúdo de um arquivo, o simulador usa as informações de posição e tamanho armazenadas nos objetos `Arquivo`. Ele busca a posição correta no arquivo `.dat` e lê a quantidade de bytes correspondente ao tamanho do arquivo, recriando o conteúdo original.
+
+#### Importância do Arquivo `.dat`
+
+- **Persistência dos Dados:** O arquivo `.dat` permite que os dados do sistema de arquivos sejam persistentes entre as execuções do programa. Toda vez que o simulador é iniciado, ele carrega a estrutura do sistema de arquivos a partir deste arquivo.
+- **Eficiência:** Ao armazenar tanto a estrutura quanto o conteúdo dos arquivos de forma serializada e referenciada, o arquivo `.dat` permite operações de leitura e escrita eficientes.
+- **Integridade dos Dados:** Utilizando técnicas de journaling, o simulador garante que as operações sejam registradas e que a estrutura do sistema de arquivos permaneça consistente, mesmo em caso de falhas ou interrupções.
+  
 ---
 
 ## Parte 3: Implementação em Java
